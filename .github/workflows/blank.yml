@@ -34,6 +34,5 @@ jobs:
       - name: pwd
         run: pwd
       - name: release
-        cwd: '~/.'
         uses: softprops/action-gh-release@v1
         
