@@ -27,5 +27,7 @@ jobs:
         uses: actions/checkout@master
         with:
           repository: komeiji-satori/Dress
+      - name: test
+        run: ls
       - name: index it
-        run: find ./* -name '*.jpg' -print
+        run: find . -name '*.[JPG|jpg|GIF|gif|tiff|TIFF|webp|WEBP|PNG|png|JPEG|jpeg]' -type f -print > list.txt
